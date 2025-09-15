@@ -1,3 +1,5 @@
+console.log('Branch test working!');
+
 const taskInput = document.querySelector('#taskInput');
 const addTaskBtn = document.querySelector('#addTaskBtn');
 const todoList = document.querySelector('#todoList');
@@ -6,7 +8,7 @@ function createTask(userText){
     const li = document.createElement('li');
     li.textContent = userText;
     const deleteBtn = document.createElement('button');
-    deleteBtn.textContent = 'Delete';
+    deleteBtn.textContent = 'Remove';
     li.appendChild(deleteBtn);
     todoList.appendChild(li);
 }
